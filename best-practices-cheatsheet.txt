@@ -219,6 +219,7 @@ git clone URL
 git config --global credential.helper 'cache --timeout SEC' 	-> PW in cache for SEC seconds 28800=8h
 
 
+# 2019-04-03
 ########################################################################
 #
 #   BASH Skript- driver script - for more safety
@@ -240,6 +241,33 @@ u _ wenn Variable net gesetzt is, bricht das Skript ab  -> "unbound variable"
 	(ich kann sie absichtlich immer noch leer setzen)
 x _ git jede Zeile, die ausgeführt wird,  auf das Terminal aus
 o _ Fehler innerhalb eines mehrteiligen Befehls: Skript wird abgebrochen
+
+########################################################################
+#
+#  MARKUP
+#
+########################################################################
+
+was macht ein .md?
+es macht alles hübsch
+das steht für Markdown
+
+steht für Gruppe von Sprachen: "Markup" Sprachen
+HTML / LaTeX / Markdown / XML
+beschreiben Formatierung des Dokuments mit Tags
+
+github flavoured markdown: > macht Zitat Anfang < zitat Ende
+
+von Markdown kann man gut ins PDF konvertieren
+von LaTeX auch
+-> Beispiele mit pandoc (document converter)  pandoc.org
+man muss aber vorher LaTex Libraries runterladen
+
+########################################################################
+
+
+
+
 
 
 
