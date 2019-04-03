@@ -219,6 +219,29 @@ git clone URL
 git config --global credential.helper 'cache --timeout SEC' 	-> PW in cache for SEC seconds 28800=8h
 
 
+########################################################################
+#
+#   BASH Skript- driver script - for more safety
+#
+########################################################################
+
+# see github/biodatasciencetulln/AA_frequencies_sec_structures/bin/01run_EXAMPLE.sh
+# Zeile 2
+
+set -euxo pipefail
+
+
+# INVAR=$1 das erste Argument was übergeben wird, wird in dieser Variable gespeichert
+# wenn nix übergeben wird, is es default kein Fehler
+# nur leer
+
+e _ wenn Fehler auftaucht, dann wirds instant abgebrochen (Skript nicht weiter ausgeführt)
+u _ wenn Variable net gesetzt is, bricht das Skript ab  -> "unbound variable"
+	(ich kann sie absichtlich immer noch leer setzen)
+x _ git jede Zeile, die ausgeführt wird,  auf das Terminal aus
+o _ Fehler innerhalb eines mehrteiligen Befehls: Skript wird abgebrochen
+
+
 
 
 
